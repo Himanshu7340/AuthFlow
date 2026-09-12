@@ -84,7 +84,7 @@ function Signup() {
     setTimeout(() => {
       setIsLoading(false);
       alert(
-        "Account creation validation successful!"
+        "Demo validation successful — no account was created."
       );
     }, 1000);
   };
@@ -99,7 +99,7 @@ function Signup() {
 
         <div className="visual-content">
           <span className="eyebrow">
-            SECURE • SIMPLE • MODERN
+            AUTHENTICATION UI DEMO
           </span>
 
           <h1>
@@ -109,8 +109,8 @@ function Signup() {
           </h1>
 
           <p>
-            Start with a secure and beautifully designed
-            authentication experience built from scratch.
+            Explore a frontend authentication UI concept built from scratch.
+            This demo does not create accounts or transmit credentials.
           </p>
         </div>
 
@@ -128,6 +128,8 @@ function Signup() {
             <span>AuthFlow</span>
           </div>
 
+          <div className="demo-notice" role="note">⚠️ UI DEMO — Do not enter real credentials. Nothing is stored or transmitted.</div>
+
           <div className="form-heading">
             <div className="form-badge">
               GET STARTED
@@ -136,7 +138,7 @@ function Signup() {
             <h2>Create account</h2>
 
             <p>
-              Fill in your details to get started.
+              Frontend demo only — do not enter real personal information.
             </p>
           </div>
 
@@ -151,7 +153,7 @@ function Signup() {
                 id="name"
                 name="name"
                 type="text"
-                placeholder="Himanshu Choudhary"
+                placeholder="Demo User"
                 value={formData.name}
                 onChange={handleChange}
                 className={
@@ -177,7 +179,7 @@ function Signup() {
                 id="signup-email"
                 name="email"
                 type="email"
-                placeholder="you@example.com"
+                placeholder="demo@example.com"
                 value={formData.email}
                 onChange={handleChange}
                 className={
@@ -208,7 +210,7 @@ function Signup() {
                       ? "text"
                       : "password"
                   }
-                  placeholder="Create a password"
+                  placeholder="Demo password only"
                   value={formData.password}
                   onChange={handleChange}
                   className={
@@ -258,7 +260,7 @@ function Signup() {
                       ? "text"
                       : "password"
                   }
-                  placeholder="Repeat your password"
+                  placeholder="Repeat demo password"
                   value={formData.confirmPassword}
                   onChange={handleChange}
                   className={

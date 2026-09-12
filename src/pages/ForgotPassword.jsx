@@ -43,7 +43,7 @@ function ForgotPassword() {
 
         <div className="visual-content">
           <span className="eyebrow">
-            SECURE • SIMPLE • MODERN
+            AUTHENTICATION UI DEMO
           </span>
 
           <h1>
@@ -53,8 +53,8 @@ function ForgotPassword() {
           </h1>
 
           <p>
-            Don't worry. Enter your email and we'll help
-            you get back into your account.
+            This is a frontend password-recovery UI concept.
+            No emails are sent and no account data is processed.
           </p>
         </div>
 
@@ -74,6 +74,8 @@ function ForgotPassword() {
 
           {!isSent ? (
             <>
+              <div className="demo-notice" role="note">⚠️ UI DEMO — Do not enter real credentials. Nothing is stored or transmitted.</div>
+
               <div className="form-heading">
                 <div className="form-badge">
                   ACCOUNT RECOVERY
@@ -82,8 +84,7 @@ function ForgotPassword() {
                 <h2>Forgot password?</h2>
 
                 <p>
-                  Enter your email and we'll send you
-                  a password reset link.
+                  Frontend demo only — no reset email will be sent.
                 </p>
               </div>
 
@@ -96,7 +97,7 @@ function ForgotPassword() {
                   <input
                     id="reset-email"
                     type="email"
-                    placeholder="you@example.com"
+                    placeholder="demo@example.com"
                     value={email}
                     onChange={(event) => {
                       setEmail(event.target.value);
@@ -148,15 +149,14 @@ function ForgotPassword() {
               </div>
 
               <div className="form-badge">
-                EMAIL SENT
+                DEMO COMPLETE
               </div>
 
               <h2>Check your email</h2>
 
               <p>
-                If an account exists for{" "}
-                <strong>{email}</strong>, we've sent
-                instructions to reset your password.
+                Demo flow complete for{" "}
+                <strong>{email}</strong>. No reset email was sent.
               </p>
 
               <Link

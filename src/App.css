@@ -144,6 +144,18 @@
   margin-bottom: 60px;
 }
 
+.demo-notice {
+  margin-bottom: 22px;
+  padding: 12px 14px;
+  border: 1px solid #d9d7ff;
+  border-radius: 10px;
+  background: #f5f4ff;
+  color: #4a46a8;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
 .form-heading {
   margin-bottom: 34px;
 }

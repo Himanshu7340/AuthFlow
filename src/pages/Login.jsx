@@ -40,7 +40,7 @@ function Login() {
 
     setTimeout(() => {
       setIsLoading(false);
-      alert("Login validation successful!");
+      alert("Demo validation successful — no account was created.");
     }, 1000);
   };
 
@@ -76,7 +76,7 @@ function Login() {
 
         <div className="visual-content">
           <span className="eyebrow">
-            SECURE • SIMPLE • MODERN
+            AUTHENTICATION UI DEMO
           </span>
 
           <h1>
@@ -86,8 +86,8 @@ function Login() {
           </h1>
 
           <p>
-            A simple, secure and beautifully designed
-            authentication experience built from scratch.
+            A frontend authentication UI concept built from scratch.
+            This demo does not create accounts or transmit credentials.
           </p>
         </div>
 
@@ -105,13 +105,15 @@ function Login() {
             <span>AuthFlow</span>
           </div>
 
+          <div className="demo-notice" role="note">⚠️ UI DEMO — Do not enter real credentials. Nothing is stored or transmitted.</div>
+
           <div className="form-heading">
             <div className="form-badge">WELCOME BACK</div>
 
             <h2>Sign in</h2>
 
             <p>
-              Enter your details to access your account.
+              Frontend demo only — do not enter real passwords or personal information.
             </p>
           </div>
 
@@ -125,7 +127,7 @@ function Login() {
               <input
                 id="email"
                 type="email"
-                placeholder="you@example.com"
+                placeholder="demo@example.com"
                 value={email}
                 onChange={handleEmailChange}
                 className={errors.email ? "input-error" : ""}
@@ -157,7 +159,7 @@ function Login() {
                       ? "text"
                       : "password"
                   }
-                  placeholder="Enter your password"
+                  placeholder="Demo password only"
                   value={password}
                   onChange={handlePasswordChange}
                   className={
@@ -206,18 +208,18 @@ function Login() {
           </form>
 
           <div className="divider">
-            <span>or continue with</span>
+            <span>demo options</span>
           </div>
 
           <div className="social-buttons">
             <button type="button">
               <span className="social-icon">G</span>
-              Google
+              Google demo
             </button>
 
             <button type="button">
               <span className="social-icon">◉</span>
-              GitHub
+              GitHub demo
             </button>
           </div>
 
