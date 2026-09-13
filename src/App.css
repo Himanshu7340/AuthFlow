@@ -514,35 +514,154 @@
   }
 }
 
+/* Tablet */
 @media (max-width: 850px) {
   .auth-page {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
   .auth-visual {
+    display: flex;
+    min-height: auto;
+    height: auto;
+    padding: 30px 28px 34px;
+    justify-content: flex-start;
+    gap: 45px;
+  }
+
+  .auth-visual::before {
+    width: 360px;
+    height: 360px;
+    right: -190px;
+    top: -100px;
+  }
+
+  .auth-visual::after {
+    width: 150px;
+    height: 150px;
+    left: -90px;
+    bottom: -90px;
+  }
+
+  .brand {
+    margin-bottom: 0;
+  }
+
+  .visual-content {
+    margin-top: 0;
+    max-width: 650px;
+  }
+
+  .eyebrow {
+    margin-bottom: 16px;
+  }
+
+  .visual-content h1 {
+    font-size: clamp(42px, 8vw, 64px);
+    letter-spacing: -3px;
+  }
+
+  .visual-content p {
+    margin-top: 18px;
+    max-width: 600px;
+    font-size: 14px;
+  }
+
+  .visual-footer {
     display: none;
   }
 
   .auth-form-section {
-    min-height: 100vh;
-    padding: 35px 24px;
+    min-height: auto;
+    padding: 45px 28px 50px;
+    align-items: flex-start;
+  }
+
+  .auth-form-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   .mobile-brand {
-    display: flex;
+    display: none;
   }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
+  .auth-visual {
+    padding: 24px 20px 28px;
+    gap: 30px;
+  }
+
+  .brand {
+    font-size: 17px;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+  }
+
+  .visual-content {
+    margin-top: 0;
+  }
+
+  .eyebrow {
+    margin-bottom: 13px;
+    font-size: 9px;
+    letter-spacing: 1.6px;
+  }
+
+  .visual-content h1 {
+    font-size: 39px;
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+
+  .visual-content p {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
   .auth-form-section {
-    padding: 28px 20px;
+    padding: 30px 20px 40px;
+  }
+
+  .form-heading {
+    margin-bottom: 28px;
   }
 
   .form-heading h2 {
     font-size: 32px;
+    letter-spacing: -1.2px;
+  }
+
+  .form-heading p {
+    font-size: 14px;
+  }
+
+  .demo-notice {
+    margin-bottom: 18px;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
   }
 
   .social-buttons {
     grid-template-columns: 1fr;
+  }
+
+  .divider {
+    margin: 25px 0 18px;
+  }
+
+  .signup-text {
+    margin-top: 24px;
   }
 }
